@@ -2,14 +2,38 @@
 #include <fstream>
 #include <iostream>
 
-bool saveTexture2D()
+bool saveTexture2D(std::string path, unsigned int size, unsigned char* pixels, int height, int width)
 {
+    char version = 1;
 
+    std::ofstream assetfile(path, std::ios::binary);
+
+    assetfile.write((char*)&version, sizeof(version));
+
+    assetfile.write((char*)&size, sizeof(size));
+    assetfile.write((char*)&pixels[0], sizeof(unsigned char)*size);
+
+    assetfile.write((char*)&height, sizeof(height));
+    assetfile.write((char*)&width, sizeof(width));
+
+    assetfile.close();
     return 1;
 }
 
-bool saveMaterial()
+bool saveMaterial(std::string path, std::string albedo)
 {
+    char version = 1;
+
+    int albedoSize = albedo.size();
+
+    std::ofstream assetfile(path, std::ios::binary);
+
+    assetfile.write((char*)&version, sizeof(version));
+
+    assetfile.write((char*)&albedoSize, sizeof(albedoSize));
+    assetfile.write((char*)&albedo[0], sizeof(char)*albedo.size());
+
+    assetfile.close();
 
     return 1;
 }
@@ -17,10 +41,10 @@ bool saveMaterial()
 bool saveMesh(std::string path, std::string materialPath, std::vector<float> vertices, std::vector<int> indices, std::vector<float> textureCoords)
 {
     char version = 1;
+    int materialPathCount = materialPath.size();
     int verticesCount = vertices.size();
     int indicesCount = indices.size();
     int textureCoordsCount = textureCoords.size();
-    int materialPathCount = materialPath.size();
 
     std::ofstream assetfile(path, std::ios::binary);
     assetfile.write((char*)&version, sizeof(version));// Version
@@ -38,5 +62,8 @@ bool saveMesh(std::string path, std::string materialPath, std::vector<float> ver
     assetfile.write((char*)&textureCoords[0], sizeof(float)*textureCoords.size());// TextureCoords
 
     assetfile.close();
+
+    std::cout << verticesCount << std::endl;
+
     return 1;
 }

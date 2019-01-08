@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.8.0, 2019-01-03T22:13:29. -->
+<!-- Written by QtCreator 4.8.0, 2019-01-06T20:22:49. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -65,7 +65,7 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Imported Kit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Imported Kit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{f11981c7-5574-4918-a857-b516bf8f1ceb}</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">2</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">1</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">2</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
@@ -355,7 +355,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/tim/Documents/GitProjects/build-LBEAssimpAssetTest-Imported_Kit-Release/Libraries/assimp/tools/assimp_cmd</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/tim/Documents/GitProjects/build-LBEAssimpAssetTest-Imported_Kit-Debug/Libraries/assimp/tools/assimp_cmd</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
@@ -411,7 +411,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/tim/Documents/GitProjects/build-LBEAssimpAssetTest-Imported_Kit-Release/Libraries/assimp/test</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/tim/Documents/GitProjects/build-LBEAssimpAssetTest-Imported_Kit-Debug/Libraries/assimp/test</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="bool" key="Analyzer.QmlProfiler.AggregateTraces">false</value>
@@ -467,7 +467,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/tim/Documents/GitProjects/build-LBEAssimpAssetTest-Imported_Kit-Release</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/tim/Documents/GitProjects/build-LBEAssimpAssetTest-Imported_Kit-Debug</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">3</value>
   </valuemap>
